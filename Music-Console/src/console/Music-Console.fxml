@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.9999000000025" prefWidth="850.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="console.Controller.gonorrea">
+  <children>
+    <TitledPane alignment="CENTER" animated="false" blendMode="DIFFERENCE" cache="false" layoutX="0.0" layoutY="0.0" minWidth="850.0" mouseTransparent="false" pickOnBounds="true" prefHeight="399.9998779296875" prefWidth="850.0" text="Console" textAlignment="CENTER" textOverrun="ELLIPSIS">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" mouseTransparent="false" prefHeight="363.0" prefWidth="847.0000999999975">
+          <children>
+            <Button layoutX="387.0" layoutY="90.0" mnemonicParsing="false" text="PLAY" textFill="#990093">
+              <font>
+                <Font name="Arial Rounded MT Bold" size="18.0" fx:id="x1" />
+              </font>
+            </Button>
+            <ImageView blendMode="EXCLUSION" fitHeight="107.75" fitWidth="143.66666666666666" layoutX="51.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <ProgressBar blendMode="RED" cache="true" cacheHint="DEFAULT" disable="true" focusTraversable="true" layoutX="263.0" layoutY="66.0" opacity="1.0" prefWidth="450.0" progress="0.03" visible="true" />
+            <Button font="$x1" layoutX="538.0" layoutY="90.0" mnemonicParsing="false" onAction="#gonorrea" text="STOP" textFill="#00ccb4" />
+            <Text disable="true" fill="BLACK" focusTraversable="true" fontSmoothingType="GRAY" layoutX="393.0" layoutY="34.0" opacity="1.0" smooth="true" strikethrough="false" stroke="#fffdcc" strokeType="OUTSIDE" strokeWidth="8.1" text="SONG" underline="false">
+              <font>
+                <Font name="Calibri Bold Italic" size="27.0" />
+              </font>
+            </Text>
+            <ToggleButton layoutX="35.0" layoutY="317.0" mnemonicParsing="false" onAction="#gonorrea" pickOnBounds="true" text="INPUT 1" wrapText="false">
+              <font>
+                <Font name="Calibri Bold Italic" size="18.0" fx:id="x2" />
+              </font>
+            </ToggleButton>
+            <ToggleButton font="$x2" layoutX="263.0" layoutY="317.0" mnemonicParsing="false" pickOnBounds="true" text="INPUT 2" />
+            <ToggleButton contentDisplay="CENTER" font="$x2" layoutX="644.0" layoutY="316.0" mnemonicParsing="false" pickOnBounds="true" text="OUTPUT 1" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" underline="false" wrapText="false" />
+            <Slider blendMode="MULTIPLY" blockIncrement="5.0" layoutX="25.0" layoutY="166.0" majorTickUnit="25.0" max="100.0" orientation="VERTICAL" pickOnBounds="true" />
+            <Slider blendMode="MULTIPLY" blockIncrement="5.0" layoutX="230.0" layoutY="166.0" majorTickUnit="25.0" max="100.0" orientation="VERTICAL" pickOnBounds="true" />
+            <Slider blendMode="MULTIPLY" blockIncrement="5.0" layoutX="528.0" layoutY="164.0" majorTickUnit="25.0" max="100.0" orientation="VERTICAL" pickOnBounds="true" />
+            <Separator blendMode="EXCLUSION" layoutX="214.0" layoutY="148.0" mouseTransparent="true" orientation="VERTICAL" prefHeight="200.0" />
+            <Separator blendMode="DIFFERENCE" layoutX="417.0" layoutY="148.0" mouseTransparent="true" orientation="VERTICAL" prefHeight="200.0" />
+            <Text font="$x2" layoutX="16.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VOL." />
+            <Text font="$x2" layoutX="230.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VOL." />
+            <Text font="$x2" layoutX="520.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VOL." />
+            <Separator blendMode="EXCLUSION" layoutX="25.0" layoutY="130.0" mouseTransparent="true" prefWidth="786.0" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+  </children>
+</AnchorPane>
